@@ -11,10 +11,13 @@
 /*
 	Custom Changes for Resume
 */
-.role-duties ul{
-	display: none;
+.major{
+	text-align: center;
 }
 
+.experience{
+	display: none ;
+}
 
 
 
