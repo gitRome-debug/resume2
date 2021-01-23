@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -19,31 +20,16 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Shelton Rhodes</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
+						<h1><a href="index.html">Shelton Rhodes</a></h1> 
+						
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+				
 
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"><img class="profile-pic" src=""></span></div>
+							<div class="logo"><span class="icon fa-gem"><img class="profile-pic" src="https://media-exp1.licdn.com/dms/image/C4E03AQHE_qW01jS0ZA/profile-displayphoto-shrink_100_100/0/1578326315796?e=1616630400&v=beta&t=ee7_tj2aziJ5-GPeW21_bcCsp1Ju8ZbtUBELdYFTR2k"></span></div>
 							<h2>Shelton Rhodes | Software Engineer</h2>
 							<p>I am a highly driven and highly motivated individual who hopes to obtain a leadership role within a prestigious company. Within this company I wish to be able to heighten and mold my technical skills and also leadership abilities and become all around knowledgeable within my role and with the business of the company itself.</p>
 						</div>
@@ -69,12 +55,12 @@
 									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Technical Skills</h2>
-										<p>J Query, JavaScript, Sharepoint, C# , C++, Data  Reporting, PHP, Project Management, Visual Basic, HTML5, CSS, SQL, NODE.js, React.js, Docker, Kubernetes , REST APIs, Working in Agile Environments, working within version control envoironments that include but are not limited to GITHUB and AZURE</p>
+										<p>J Query, JavaScript, Sharepoint, C# , C++, Data  Reporting, PHP, Project Management, HTML5, CSS, SQL, NODE.js, React.js, Docker, Kubernetes , REST APIs, Working in Agile Environments, working within version control envoironments that include but are not limited to GitHub and Azure </p>
 									</div>
 								</div>
 							</section>
 
-						<!-- Three -->
+						<!-- 
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
@@ -85,19 +71,21 @@
 									</div>
 								</div>
 							</section>
+						-->
 
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Work History</h2>
-									
+									<p></p>
+									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3 class="major">The Shipyard | Marketing Agency</h3>
 											<p class="role-title">Software Developer / Engineer, Columbus, OH</p>
 											<p class="role-timeframe">May 2020 – Current</p>
 											<p class="role-duties">
-												<ul>
+												<ul class="experience" id="shipyard-text">
 													<li>Responsible for any updates and/or maintenance for the following client’s websites that include but are not limited to: Nationwide Health Insurance, Donatoes, The Shipyard, Petbutler, Marine Layer, and more</li>
 													<li>Responsible for the coding, design and layout of our clients websites according to their specifications </li>
 													<li>Assuring that the code that I write is efficient and readable</li>
@@ -110,7 +98,7 @@
 													<li>The ability to multitask with strict time constraints, budgets and business goals</li>
 												</ul>
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<a class="special" onclick="showText($('#shipyard-text').attr('id'))">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
@@ -118,7 +106,7 @@
 											<p class="role-title">Business Process Analyst</p>
 											<p class="role-timeframe">August 2017 – May 2020</p>
 											<p class="role-duties">
-												<ul>
+												<ul class="experience" id="chase-ba-text">
 													<li>Experienced working with various lines of business within the banking organization to gain a well understanding of their processes, procedures, and business needs</li>
 													<li>Collaborating with our organizations legal team and our procedure writers to finalize a new process and migrating this process to our internal knowledge platform via HTML, CSS, Javascript </li>
 													<li>Responsible for quality reviews for my teams code prior to launch to ensure there were no errors and all content was compatible with the server side code</li>
@@ -129,48 +117,45 @@
 													<li>Picked to participate with a small group of innovators/developers to come up with various ideas to use modern technology to resolve various departmental opportunities within our line of business </li>
 												</ul>
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<a class="special" onclick="showText($('#chase-ba-text').attr('id'))">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">JPMorgan Chase Bank</h3>
-											<p class="role-title">Freelance Software/Website Developer</p>
+											<h3 class="major">Cypher Interactive LLC</h3>
+											<p class="role-title">Freelance Software/Website Engineer</p>
 											<p class="role-timeframe">January 2016 - Current</p>
 											<p class="role-duties">
-												<ul>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
+												<ul class="experience" id="cypher-int">
+													<li>Cypher Interactive is my own LLC where I operate as an consultant for application and web development solutions</li>
+													<li>Laborgenome - Partnered with the Laborgenome group to assist with the creation of a workforce application that allowed end users to choose the best candidates for their workforce needs</li>
+													<li>TwoFish&Loaves LLC - Lead Designer and Developer in the creation of TwoFish&Loaves LLC’s website, using PHP, Boostrap, SQL, and CSS in order to complete the project to the clients specifications </li>
+													<li>Hammond Golf Academy - Responsible for discovering and finding a solution to implement non-compatible software and functionality into the clients newly created website</li>
+													<li>Smart Columbus - Responsible for the redesigning of the client’s main website, making the site itself more modern, sleek, and appealing to the current end user while delivering vasts amounts of content whereas to overwhelm the client’s end users</li>
 												</ul>
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<a class="special" onclick="showText($('#cypher-int').attr('id'))">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
 											<h3 class="major">JPMorgan Chase Bank</h3>
-											<p class="role-title">Business Process Analyst</p>
-											<p class="role-timeframe">August 2017 – May 2020</p>
+											<p class="role-title">KYC/AML Quality Analyst</p>
+											<p class="role-timeframe">July 2015 – August 2017</p>
 											<p class="role-duties">
-												<ul>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
-													<li></li>
+												<ul class="experience" id="chase-kyc">
+													<li>Investigate and assess alerts for potential money laundering and/or other risks to the Bank</li>
+													<li>Ensure efficient identification and monitoring of suspicious activities and transactions</li>
+													<li>Maintain a current understanding of money laundering and terrorist financing issues, including policies, procedures, regulations, industry best practice, criminal typologies and developing trends</li>
+													<li>Assist in identifying systemic procedural weaknesses and additional training requirements for the Bank.</li>
+													<li>Provide direction and guidance to KYC/AML Specialists on appropriate remediation action for high risk accounts</li>
+													<li>Advise management on current issues regarding correspondent banking</li>
+													<li>Investigate, review and report AML related and economic sanction related alerts</li>
+													<li>Ensure proper investigation of suspicious transactions or money laundering alerts</li>
+													<li>Assist in the development of KYC/AML Specialist by providing feedback and coaching</li>
 												</ul>
 											</p>
-											<a href="#" class="special">Learn more</a>
+											<a class="special" onclick="showText($('#chase-kyc').attr('id'))">Learn more</a>
 										</article>
 									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
 								</div>
 							</section>
 
@@ -179,41 +164,9 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
+							
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Cypher Interactive LLC. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> & Shelton Rhodes</li>
 							</ul>
 						</div>
 					</section>
@@ -224,6 +177,7 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/job-duties.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>

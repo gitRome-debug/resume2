@@ -11,10 +11,39 @@
 /*
 	Custom Changes for Resume
 */
-.role-duties ul{
-	display: none;
+
+.profile-pic{
+	border-radius: 9999px;
+	border: 2px #4c5c96 solid;
 }
 
+.special:hover{
+	cursor: pointer;
+}
+
+#banner .logo .icon{
+	border: none !important;
+}
+
+.major{
+	text-align: center;
+}
+
+.experience{
+	display: none ;
+}
+
+.actions li, .actions li a{
+	width:100%;
+}
+
+.role-display-text{
+	position: absolute;
+    left: 26%;
+    top: 25%;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+}
 
 
 
