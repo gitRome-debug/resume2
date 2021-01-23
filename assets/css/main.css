@@ -45,6 +45,12 @@
     border: 1px solid #ffffff;
 }
 
+@media screen and (min-width:1028px){
+	.image img{
+		height: 340px;
+	}
+}
+
 
 
 
